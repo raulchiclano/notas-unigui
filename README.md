@@ -12,6 +12,13 @@ self.WebForm.JSWindow.Id := 'ventanaModal'
     //Ejemplo de como asignar un ID para css y js en unigui
     BActualizar.JSControl.Id:= 'miID';
 ```
+### Asignar ID mediante JSConfig a un componente, por ejemplo, un label 
+```
+    {:::::::::::::::EJEMPLOS JAVASCRIPT:::::::::::::::::::}
+
+    with Titulo as IuniJSInterface do
+  JSConfig('id',['MiTitulo']);
+```
 ### Ejecutar codig javasacript desde el lado del servidor y desde archivo externo
 ```
     //...para usarlo para modificar el texto por js
