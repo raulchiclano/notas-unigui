@@ -25,6 +25,18 @@ USES uniGUIJSInterface;
     with Titulo as IuniJSInterface do
   JSConfig('id',['MiTitulo']);
 ```
+
+### Eventos Ajax
+#### Desde Iframe:
+```
+  UniSession.AddJS('window.parent.ajaxRequest(window.parent.Oportunidad.KanbanView,  ''actualizarFases'', []);')
+```
+
+#### Desde el mismo form (Por ejemplo: SweetAlert):
+```
+  UniSession.AddJS('ajaxRequest(Firma.panelDatos,  ''Salir'', []);');
+```
+
 ### Ejecutar codig javasacript desde el lado del servidor y desde archivo externo
 ```
     //...para usarlo para modificar el texto por js
