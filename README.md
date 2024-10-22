@@ -5,6 +5,12 @@ Mis notas personales de uniGui-Delphi
 ```
 self.WebForm.JSWindow.Id := 'ventanaModal'
 ```
+
+### Añadir un aclase a un elemento
+```
+BotonAceptar.JSInterface.JSCall('addCls', ['btn-cf-aceptar-focused']);
+```
+
 ### Asignar ID personalizados a elementos 
 ```
     {:::::::::::::::EJEMPLOS JAVASCRIPT:::::::::::::::::::}
@@ -15,7 +21,7 @@ self.WebForm.JSWindow.Id := 'ventanaModal'
 ### Asignar ID mediante JSConfig a un componente, por ejemplo, un label 
 ```
     {:::::::::::::::EJEMPLOS JAVASCRIPT:::::::::::::::::::}
-
+USES uniGUIJSInterface;
     with Titulo as IuniJSInterface do
   JSConfig('id',['MiTitulo']);
 ```
